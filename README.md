@@ -11,9 +11,9 @@ The agent transforms unstructured, conversational user queries into type-safe da
 > **Note**: This project requires an **OpenAI API key** to run the structured extraction engine. The weather telemetry is powered by Open-Meteo, which requires no external weather API key.
 
 1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/your-username/weather-structured-agent.git](https://github.com/your-username/weather-structured-agent.git)
-   cd weather-structured-agent
+```bash
+git clone [https://github.com/your-username/weather-structured-agent.git](https://github.com/your-username/weather-structured-agent.git)
+cd weather-structured-agent
 
 ```
 
@@ -24,14 +24,12 @@ cp .env.example .env
 
 ```
 
-
 3. **Add your API key:**
 Open `.env` and set your key:
 ```env
 OPENAI_API_KEY=your_actual_openai_api_key_here
 
 ```
-
 
 *(Never commit your `.env` file to version control. It is ignored by default in `.gitignore`.)*
 
