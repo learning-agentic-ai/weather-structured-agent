@@ -64,6 +64,8 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
 pip install -e .
+ # 2. Install package in editable mode along with optional [dev] dependencies
+ pip install -e ".[dev]"
 
 # Run test suite
 pytest tests/
@@ -71,3 +73,22 @@ pytest tests/
 # Run the comparative benchmark
 python run_comparison.py
 ```
+## Found a Bug or Want to Suggest a Feature?
+
+If you encounter an issue not covered above or want to improve the schema validation:
+
+1. **Check Existing Issues**: Search the [Issues](../../issues) tab to see if the bug or feature has already been discussed.
+2. **Open an Issue**:
+   * Click **New Issue** and include the prompt that caused the failure.
+   * Provide the full traceback error from your terminal or `weather_agent.log`.
+   * Include your Python version (`python --version`) and OS environment.
+3. **Submit a Pull Request (PR)**:
+   * Fork the repository and create your feature branch:
+     ```bash
+     git checkout -b fix/issue-description
+     ```
+   * Ensure existing tests pass before pushing:
+     ```bash
+     pytest tests/
+     ```
+   * Open a PR with a description of the change and associated unit tests.
